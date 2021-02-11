@@ -1,0 +1,12 @@
+from django.urls import path
+from basicapp import views
+
+# TEMPLATE TAGGING
+
+app_name = "basicapp"
+
+urlpatterns = [
+    path("register/", views.register, name="register"),
+    path("login/", views.user_login, name="user_login"),
+
+]
